@@ -1,0 +1,488 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* 
+h1{
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px;
+
+} */
+.header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    /* border: solid yellow solid green; */
+    background-color: #1fc9ad;
+  
+}
+
+.header .logo {
+    width: 60%;
+    /* border: solid yellow solid red */
+    font-size: 27px;
+    font-weight: 900;
+    color: white;
+    padding-left: 60px;
+
+}
+
+.header nav {
+    text-align: right;
+    /* border: solid yellow solid red; */
+    width: 100%;
+    padding-right: 60px;
+}
+
+.header nav li {
+    display: inline-block;
+    padding: 20px 10px 10px 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+
+
+}
+
+.header nav li a {
+    color:white;
+    text-decoration: none;
+
+}
+
+.header nav a:hover{
+    border-bottom: 2px  solid white;
+}
+.header nav li .active {
+    color:#0b7060;
+}
+
+.section {
+    width: 90%;
+    height: 600px;
+    /* border: solid yellow solid red; */
+    margin: auto;
+}
+
+.home-des {
+    width: 50%;
+    /* border: solid yellow solid green; */
+    height: 400px;
+    margin-top: 9%;
+    padding: 120px 0px 0px 0px
+}
+
+.home-des h1 {
+
+    font-size: 40px;
+
+}
+
+.home-des h1 span {
+    color: #1fc9ad;
+    font-weight: 800;
+}
+
+.home-des h3 {
+    margin-top: 10px;
+    font-weight: 600;
+}
+.home-des button{
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #1fc9ad;
+    font-size: 17px;
+    font-weight: 600;
+    border: 2px solid #1fc9ad;
+
+}
+.home-des button:hover{
+    background-color: #1fc9ad;
+    color: white;
+    transition: all 1 ease-in-out;
+    
+}
+
+.section {
+    display: flex;
+}
+
+.section .pic {
+    /* border: solid yellow solid red; */
+    width: 50%;
+    height: 400px;
+    margin-top: 9%;
+    text-align: right;
+    animation: example 2s ease-in-out infinite alternate-reverse both
+
+}
+@keyframes example{
+    0% {transform: translateY(15px);}
+    100% {transform: translateY(-15px);}
+    
+}
+.sec-3{
+    background-color: #1fc9ad;
+    height: 170px;
+    font-size: 14px;
+    color: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.team{
+    width: 100%;
+    height: auto;
+    /* border: solid yellow solid red; */
+}
+.team h1{
+    text-align: center;
+}
+.team-display{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-sec{
+    width: 28%;
+    height: auto;
+    /* border: 1px solid purple; */
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 5px;
+}
+.team-sec-pic{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* border: 1px solid red; */
+}
+.team-sec-des{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid yellow; */
+}
+.social-link{
+    background-color: #1fc9ad;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.social-link a{
+    color: white;
+    font-size: 35px;
+}
+.ServiceCommon-display{
+    width: 100%;
+    height: auto;
+    /* border: solid yellow solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+
+.serviceCommon{
+    width: 35%;
+    height: auto;
+    border:solid yellow solid white;
+    border-radius: 7px;
+    color: aliceblue;
+    background-color: #1fc9ad;
+    padding: 20px;
+    margin: 20px 0px;
+    /* text-align: center; */
+    box-shadow: 5px 5px 15px gray;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.serviceCommon button{
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border : 2px solid white ;
+    color: white;
+    border-bottom-right-radius: 10px;
+  
+}
+.serviceCommon button:hover{
+    background-color: white;
+    color: #1fc9ad;
+    border:2px solid #1fc9ad;
+}
+.btn-right{
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* ......................fooetr......................  */
+
+footer {
+    background-color:#1fc9ad;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+  }
+  
+  .footer-section {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+    padding: 20PX;
+    border-left: 2px solid white;
+  }
+  
+  .footer-section h3 {
+    margin-top: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .footer-social-link{
+    width: 30%;
+    background-color: #1fc9ad;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.footer-social-link a{
+    color: white;
+    font-size: 35px;
+}
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul li i {
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-section {
+      flex-basis: 100%;
+    }
+  }
+  
+  .Course-section{
+    width: 100%;
+    height:auto;
+    /* border: solid yellow solid red; */
+  }
+  .Course-section h1{
+    font-size: 40px;
+    color: #1fc9ad;
+    font-weight: 800;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+  }
+  .card-main{
+    width: 26%;
+    height: auto;
+    /* border:1px solid #1fc9ad; */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #1fc9ad;
+  }
+
+  .courses-card-display{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .card-main .course-card-pic{
+    width: 100%;
+    height:270px;
+    /* border: solid yellow solid yellow; */
+  }
+  .course-card-pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+   
+  }
+  .card-main .course-card-des{
+    padding: 10px;
+    line-height: 30px;
+  }
+  .card-main .course-card-des button{
+    padding: 5px 7px;
+    font-size: 18px;
+    background-color: transparent;
+    /* border-bottom-right-radius: 10px; */
+    color: #1fc9ad;
+    font-weight: 500;
+    border: 2px solid #1fc9ad;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 16%;
+  }
+
+  .card-main .course-card-des button:hover{
+    background-color: #1fc9ad;
+    color: white;
+    transition: all 0.4s ease-in-out;
+  }
+
+.about-des{
+    width: 90%;
+    height: auto;
+    border-bottom: 2px solid #1fc9ad;
+    border-left: 2px solid #1fc9ad;
+    margin: 20px 10px 20px 100px;
+    padding: 20px;
+    box-shadow: -3px 5px 5px #1fc9ad;
+}
+.about-des-main h1{
+    text-align: center;
+    color: #1fc9ad;
+}
+.about-des-main p{
+    line-height: 30px;
+}
+
+
+form {
+    max-width: 55%;
+    margin: 50px auto;
+    
+    border: solid yellow solid #1fc9ad;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+     overflow: hidden;
+     background-color: rgba(52,235,195 , 0.4);
+  }
+  
+  form h2 {
+    font-size: 1.5rem;
+
+    background-color:#1fc9ad;
+    line-height: 50px;
+  margin-bottom: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  form label {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:#1fc9ad;
+    
+  }
+  
+  form input {
+    width: 90%;
+   background-color: rgba(52,235,195 , 0);
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    border-radius: 5px;
+  outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom:  1px solid #1fc9ad;
+  }
+  form label,input{
+    margin-left: 20px;
+  }
+  
+  form button {
+    background-color: #1fc9ad;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+
+
+  .comman-form-main{
+    width: 100%;
+    height: auto;
+    /* border:2px solid red; */
+    display: flex;
+    margin-top: 30px;
+  }
+  .comman-form-left{
+    width: 50%;
+    height: auto;
+    padding: 70px;
+    /* border: solid yellow; */
+    animation: example 2s ease-in-out infinite alternate-reverse both
+  }
+  .comman-form-right{
+    width: 50%;
+    height: auto;
+    /* border: solid black; */
+  }
+
+  .commonbranches-main{
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 30px 0px;
+    justify-content:space-evenly;
+    padding: 30PX;
+  }
+  .branch-card-main{
+    width: 17%;
+    height: 180px;
+    border: 3px solid #1fc9ad;
+    line-height: 50px;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  .branch-card-main h1{
+    color: #1fc9ad;
+    margin-top: 15px;
+    font-size: 40px;
+
+  }
+  .branch-card-main h2{
+    font-size: 33px;
+    font-weight: 750;
+  }
